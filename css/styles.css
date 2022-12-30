@@ -494,16 +494,52 @@ a {
 .social-media-link:focus {
   background-color: rgba(49, 208, 170, 1);
 }
+
 .text-subscribe{
   display: block;
   margin-bottom: 16px;
 }
-.label-subskribe{
+.form-subscribe{
   display: flex;
   gap: 24px;
   position: relative;
 }
+.subscribe-input:focus{
+  outline: transparent;
+  border: 1px solid #4D5AE5;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-sub{
+  display: flex;
+  align-items: center;
+  min-width: 165px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+
+  font-family: inherit;
+  color: var(--primary-white-color);
+  background-color: var(--color-logo-button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .subscribe-input{
+ width: 264px;
+ height: 40px;
+ padding-left: 16px;
  background-color: var(--color-title);
  color: var(--primary-white-color);
  outline: transparent;
@@ -517,7 +553,7 @@ border-radius: 4px;
   bottom: 0;
   right: 0;
   z-index: 100;
-  transform: translate(-50%, -50%);
+  transform: translate(-24px, -8px);
   cursor: pointer;
 }
 /* Портфолио */
@@ -704,12 +740,11 @@ border-radius: 4px;
   border-radius: 4px;
 }
 .modal-btn {
-  /* top: 24px;
-  left: 24px; */
   width: 24px;
   height: 24px;
-  margin-left: auto;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -739,6 +774,7 @@ border-radius: 4px;
   color: var(--color-modal-input);
   line-height: 1.33;
   letter-spacing: 0.04em;
+  font-size: 12px;
 }
 .form-massage{
   width: 100%;
@@ -746,6 +782,8 @@ border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 .form-massage:focus{
   outline: transparent;
@@ -753,8 +791,8 @@ border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-massage::placeholder{
-  padding-left: 16px;
-  padding-top: 8px;
+  /* padding-left: 16px;
+  padding-top: 8px; */
 }
 .form-input{
   width: 100%;
