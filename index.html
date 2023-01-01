@@ -202,11 +202,7 @@
 <!-- Modal -->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
-<button class="modal-btn" data-modal-close>
-    <svg class="modal-icon" width="8" height="8">
-        <use href="./img/sprite.svg#icon-close"></use>
-    </svg>
-</button>
+<div class="modal-form">
 <form name="booking-form">
     <p class="main-text">Leave your contacts and we will call you back</p>
     <div role="group" class="form-group">
@@ -245,7 +241,12 @@
     </label>
     <button class="button-hero btn" type="submit">Send</button>
 </div>
-</form>
+</form></div>
+<button class="modal-btn" data-modal-close>
+    <svg class="modal-icon" width="8" height="8">
+        <use href="./img/sprite.svg#icon-close"></use>
+    </svg>
+</button>
 </div></div>
 <script src="./js/modal.js"></script>
 </body>
